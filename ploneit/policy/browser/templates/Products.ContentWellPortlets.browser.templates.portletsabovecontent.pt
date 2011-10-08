@@ -1,0 +1,29 @@
+<div id="portlets-above"
+     class="row"
+     i18n:domain="Products.ContentWellPortlets">
+    <tal:block tal:condition="python: not request.get('URL').endswith('@@manage-portletsabovecontent') and not request.get('URL').endswith('@@manage-portletsbelowcontent') and not request.get('URL').endswith('@@manage-footerportlets')">    
+        
+        <div class="portletsAboveContentA cell position-0 width-6" tal:content="structure provider:ContentWellPortlets.AbovePortletManager1" /> 
+
+        <div class="portletsAboveContentB cell position-6 width-5" tal:content="structure provider:ContentWellPortlets.AbovePortletManager2" /> 
+
+        <div class="portletsAboveContentC cell position-11 width-5" tal:content="structure provider:ContentWellPortlets.AbovePortletManager3" /> 
+        <div class="visualClear"><!-- clear floats --></div>
+        <div class="portletsAboveContentD cell position-0 width-6" tal:content="structure provider:ContentWellPortlets.AbovePortletManager4" />
+
+        <div class="portletsAboveContentE cell position-6 width-5" tal:content="structure provider:ContentWellPortlets.AbovePortletManager5" />
+
+        <div class="portletsAboveContentF cell position-11 width-5" tal:content="structure provider:ContentWellPortlets.AbovePortletManager6" />
+    
+    </tal:block>
+    <div class="row">
+      <p class="managePortletsAboveLink"
+         tal:condition="view/canManagePortlets">
+          <a href="" 
+             class="managePortletsFallback"
+             tal:attributes="href view/manageUrl"
+             i18n:translate="manage_portlets_above_link">Add, edit or remove a portlet above the content</a>
+      </p>
+    </div>
+</div>
+<div class="visualClear"><!-- clear floats --></div>

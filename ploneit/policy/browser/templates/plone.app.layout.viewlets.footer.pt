@@ -1,0 +1,10 @@
+<div class="visualClear"><!-- clear floats --></div>
+<div id ="portal-footer">
+ <div class="cc-license">
+   <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/it">
+     <img alt="Licenza Creative Commons" style="border-width:0" src="/++theme++plonetheme.ploneit/images/cc-by-sa-it.png" />
+   </a>
+   &nbsp;I contenuti di questo sito sono distribuiti con licenza:
+   <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/it/"><strong>Creative Commons</strong> (Attribuzione - Condividi allo stesso modo) Italia - 2.5</a>
+ </div>
+</div>

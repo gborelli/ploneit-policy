@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>1.0</version>
+  <dependencies>
+    <dependency>profile-Products.Carousel:default</dependency>
+    <dependency>profile-Products.ContentWellPortlets:default</dependency>
+    <dependency>profile-collective.portletpage:default</dependency>
+    <dependency>profile-redturtle.portletpage.views:default</dependency>
+    <dependency>profile-plonetheme.ploneit:default</dependency>
+  </dependencies>
+</metadata>

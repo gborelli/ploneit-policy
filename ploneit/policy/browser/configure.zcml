@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ploneit.policy">
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+      directory="templates"
+      layer="..interfaces.IThemeSpecific" />
+
+  <browser:viewlet
+      name="ploneit.path_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      layer = "..interfaces.IThemeSpecific"
+      class="plone.app.layout.viewlets.common.PathBarViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="Products.ATContentTypes.interfaces.document.IATDocument"
+      name="document_notitle_view"
+      template = "document_notitle_view.pt"
+      permission = "zope2.View"
+      layer = "..interfaces.IThemeSpecific"
+  />
+</configure>
