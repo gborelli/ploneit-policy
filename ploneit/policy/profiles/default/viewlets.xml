@@ -4,6 +4,10 @@
     <viewlet name="ploneit.path_bar" insert-after="*"/>
   </order>
 
+  <hidden manager="plone.portalheader" skinname="*">
+   <viewlet name="plone.personal_bar"/>
+  </hidden>
+
   <hidden manager="plone.abovecontent" skinname="*">
    <viewlet name="plone.path_bar"/>
   </hidden>
